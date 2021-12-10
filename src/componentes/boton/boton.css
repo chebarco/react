@@ -1,0 +1,16 @@
+.botones{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+.agregar{
+    margin-bottom: 10px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: plum;
+    font-weight: bold;
+}
+

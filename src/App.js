@@ -1,21 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ComponenteUseEffect from './componentes/boton/ComponenteUseEffect';
-import ItemListContainer from './componentes/ItemListComp/ItemListContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ItemList from './componentes/Item/ItemList';
 import { NavBar } from './componentes/NavBar/NavBar';
-import ListadoProductos from './componentes/productos/ListadoProductos';
 
 
 function App() {
   return (
-      <>
+      <BrowserRouter>  
+        
+      <NavBar/>
+      <Routes>
+    
+        <Route path="/" element ={<ItemList/>}
 
-        <NavBar/>
-
-        <ItemListContainer greeting= "Bienvenidos a la Tienda Online" />
-        <ListadoProductos/>
-        <ComponenteUseEffect/>
-
-    </>
+        />
+       
+        
+        </Routes>
+    </BrowserRouter>
    
     
   );
