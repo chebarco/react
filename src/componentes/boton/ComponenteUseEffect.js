@@ -1,24 +1,41 @@
-import { useState } from 'react'
+import { useState } from "react";
+import  "./boton.css"
 
-import React from 'react'
+const ComponenteUseEffect = ({ stock, initial}) => {
+  const [count, setCount] = useState(initial);
+  
 
-function ComponenteUseEffect() {
-    const [count, setCount] = useState(0)
-
-    const handlerClick = () =>{
-        setCount(count+1)
+  const addItem = () => {
+    const newValue = count + 1;
+    if (newValue <= stock) {
+      setCount(newValue);
     }
+  };
 
+  const quitItem = () => {
+    const newValue = count - 1;
+    if (newValue >= initial) {
+      setCount(newValue);
+    }
+  };
 
-return(
-    <div>
-        <p>{count}</p>
-        <button onClick={handlerClick}>-</button>
-        <button onClick={handlerClick}>+</button>
+  const onAdd = () => {
+    const message = `Agregaste ${count} producto`;
+    //   Utilizo un condicional ternario (condicional) ? (true) : (false)
+    count === 1 ? alert(message) : alert( (message ) +  "s");
+  };
 
-        <button onClick={handlerClick}>Agregar</button>
-    </div>
-    )
-}
+  return (
+    <>
+      <div className="botones">
+        <button onClick={quitItem} className="btn">-</button>
+        <h3>{count}</h3>
+        <button onClick={addItem} className="btn">+</button>
+      </div>
+      <button onClick={onAdd} className="agregar">Agregar al Carrito</button>
+      
+    </>
+  );
+};
 
-export default ComponenteUseEffect
+export default ComponenteUseEffect ;
