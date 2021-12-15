@@ -11,7 +11,7 @@ const Lista = ({ products}) => {
           <Item
             key={product.id}
             title={product.title}
-            image={product.imageUrl}
+            image={product.img}
             price={product.price}
             stock={product.stock}
             />

@@ -21,3 +21,19 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+public/JSON/Datalist 2.json
+public/JSON/Datalist.json
+src/App.js
+src/componentes/boton/ComponenteUseEffect.js
+src/componentes/imagenes/chocolateconleche.jpeg
+src/componentes/imagenes/chocolecheconalmendras.jpeg
+src/componentes/imagenes/cholate-blanco-con-almendras1-7b8751d7519572934f16001100077671-640-0.jpeg
+src/componentes/Item/estilos.css
+src/componentes/Item/Item.js
+src/componentes/Item/ItemList.js
+src/componentes/Item/Lista.js
+src/componentes/NavBar/Cart.js
+src/componentes/NavBar/CartWidget.js
+src/componentes/NavBar/NavBar.css
+src/componentes/NavBar/NavBar.js
+*.json

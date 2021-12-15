@@ -1,7 +1,7 @@
 import { useState } from "react";
 import  "./boton.css"
 
-const ComponenteUseEffect = ({ stock, initial}) => {
+const ComponenteUseEffect = ({ stock, initial, onAdd}) => {
   const [count, setCount] = useState(initial);
   
 
@@ -19,12 +19,7 @@ const ComponenteUseEffect = ({ stock, initial}) => {
     }
   };
 
-  const onAdd = () => {
-    const message = `Agregaste ${count} producto`;
-    //   Utilizo un condicional ternario (condicional) ? (true) : (false)
-    count === 1 ? alert(message) : alert( (message ) +  "s");
-  };
-
+  
   return (
     <>
       <div className="botones">
@@ -32,7 +27,7 @@ const ComponenteUseEffect = ({ stock, initial}) => {
         <h3>{count}</h3>
         <button onClick={addItem} className="btn">+</button>
       </div>
-      <button onClick={onAdd} className="agregar">Agregar al Carrito</button>
+      <button disabled={count=== 0} onClick={() => onAdd(count)} className="agregar">Agregar al Carrito</button>
       
     </>
   );
