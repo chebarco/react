@@ -7,6 +7,7 @@ import ListadoProductos from './componentes/productos/ListadoProductos';
 
 function App() {
   return (
+<<<<<<< Updated upstream
       <>
 
         <NavBar/>
@@ -16,6 +17,19 @@ function App() {
         <ComponenteUseEffect/>
 
     </>
+=======
+      <BrowserRouter>  
+        
+      <NavBar/>
+      <Routes>
+    
+        <Route path="/" element ={<ItemList/>} />
+        <Route path="/categoria/:idCat" element ={<ItemList/>} />
+
+        
+        </Routes>
+    </BrowserRouter>
+>>>>>>> Stashed changes
    
     
   );
