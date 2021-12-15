@@ -1,9 +1,31 @@
 nav{
     background-color: plum;
+    padding-left: 20px;
    
+}
+
+.nav{
+    padding-top: 10px;
+    margin-top: 20px;
 }
 
 .cart{
     margin-left: 30px;
-    margin-top: 5px;
+    margin-top: 10px;
+
+
+}
+
+.inicio {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.productos{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
 }
