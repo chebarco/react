@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import Lista from "./Lista";
 
 const ItemList = () => {
   const [products, setProducts] = useState([]);
 
- const {idCate} = useParams  
 
   const getProductsFetch = () => {
    fetch("../JSON/Datalist.json")
@@ -14,7 +12,7 @@ const ItemList = () => {
  };
 
  useEffect(() => {
-  setTimeout(() => getProductsFetch(), 3000);
+  setTimeout(() => getProductsFetch(), 1000);
   }, []);
 
  

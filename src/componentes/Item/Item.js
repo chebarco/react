@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import ComponenteUseEffect from "../boton/ComponenteUseEffect";
 import "./estilos.css"
 
-const Item = ({title, price, img}) => {
+const Item = ({title, price, imagenes}) => {
      const[goCart, setgoCart] = useState(false)
+     
      const onAdd  = () =>{
          setgoCart(true)
      }
@@ -15,7 +16,7 @@ const Item = ({title, price, img}) => {
             <div class="box">
             <div class="content">
                 <h3>{title}</h3>
-                <img src={img} style={{width: '400px'}} />
+                <img src={imagenes} width= {'400px'} alt="img" />
                 <p>${price}</p>
                 {!goCart ? (<ComponenteUseEffect stock={10} initial={0} onAdd={onAdd}/>) :
                 (<Link to="/cart" className="ircarrito"> Ir al carrito</Link>)
