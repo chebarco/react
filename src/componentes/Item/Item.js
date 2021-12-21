@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState} from "react";
 import { Link } from "react-router-dom";
 import ComponenteUseEffect from "../boton/ComponenteUseEffect";
 import "./estilos.css"
 
 const Item = ({title, price, imagenes}) => {
      const[goCart, setgoCart] = useState(false)
-     
+
+
+
      const onAdd  = () =>{
          setgoCart(true)
      }

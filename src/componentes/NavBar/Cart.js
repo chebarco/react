@@ -3,7 +3,7 @@ import React from 'react'
 const Cart = () => {
     return (
         <div>
-            cart
+aca debe figurar el producto agregado al carrito
         </div>
     )
 }

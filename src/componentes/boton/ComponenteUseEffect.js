@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState} from "react";
 import  "./boton.css"
 
 const ComponenteUseEffect = ({ stock, initial, onAdd}) => {

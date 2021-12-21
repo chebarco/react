@@ -15,9 +15,9 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <NavDropdown title="Productos" id="basic-nav-dropdown">
-                    <NavDropdown.Item to="chocolateblancos">Chocolate Blanco</NavDropdown.Item>
-                    <NavDropdown.Item to="chocolatesespeciales">Chocolate Especiales</NavDropdown.Item>
-                    <NavDropdown.Item to="chocolateconleche">Chocolate con leche</NavDropdown.Item>
+                    <NavDropdown.Item to="blancos">Chocolate Blanco</NavDropdown.Item>
+                    <NavDropdown.Item to="especiales">Chocolate Especiales</NavDropdown.Item>
+                    <NavDropdown.Item to="leche">Chocolate con leche</NavDropdown.Item>
                     </NavDropdown>
                     <CartWidget></CartWidget>
 

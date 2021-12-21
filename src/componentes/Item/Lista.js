@@ -2,6 +2,8 @@ import Item from "./Item";
 import "./estilos.css"
 
 const Lista = ({ products}) => {
+
+
   return (
     
     <div>
